@@ -48,34 +48,38 @@ Next, you'll need to create your trigger tags that Zapier will pick up to know w
 <br />
 
 <p>
-<img src="https://i.imgur.com/ESSterq.png" height="80%" width="80%"/>
+<img src="https://i.imgur.com/h1lO8Ek.png" height="80%" width="80%"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Create a dedicated Slack Channel for your lead deliveries.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img src="https://i.imgur.com/K8uxHCz.png" height="80%" width="80%"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In Zapier, you'll want to create your automation flow. The first trigger will be "ISA lead available NAME". This is going to pull the ISA notes from the Custom Fields we created in earlier steps, and will post to Slack with a link back to the file. I have this setup to pick up whichever ISA is the one that is creating the lead notification.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img src="https://i.imgur.com/iRl1KdO.png" height="80%" width="80%"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+I duplicated this path rule for each ISA that we had on the team.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/3vMSJ6f.png" height="80%" width="80%"/>
+</p>
+<p>
+For each Slack message, this was the template. The UID for the corresponding agent could be found in Slack (that is, the part that starts with @U*****PZ). Once you've created this, it's just a matter of duplicating this for each agent on the team. <br>
+<br>
+This completes the first part of the lead notification process. <br>
+  <br>
+The second part is when the agent claims the lead, the ISA assigns the lead to agent using another tag that will add them as a collaborator. 
 </p>
 <br />
 
